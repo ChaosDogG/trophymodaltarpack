@@ -1,4 +1,4 @@
-package net.chaosdog.trophymodaltarpack;
+package chaosdog.trophymodaltarpack;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

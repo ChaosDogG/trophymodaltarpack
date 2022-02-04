@@ -1,4 +1,4 @@
-package net.chaosdog.trophymodaltarpack;
+package chaosdog.trophymodaltarpack;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

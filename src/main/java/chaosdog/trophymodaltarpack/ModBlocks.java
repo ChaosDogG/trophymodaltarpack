@@ -1,8 +1,6 @@
-package net.chaosdog.trophymodaltarpack;
+package chaosdog.trophymodaltarpack;
 
-import net.chaosdog.trophymodaltarpack.TrophyModAltarPack;
-import net.chaosdog.trophymodaltarpack.Utils;
-import net.chaosdog.trophymodaltarpack.block.TrophyBlock;
+import chaosdog.trophymodaltarpack.block.TrophyBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -14,11 +12,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBlocks {
-
-    public static final DeferredRegister<Block> BLOCKS
-            = DeferredRegister.create(ForgeRegistries.BLOCKS, TrophyModAltarPack.ID);
-    private static final DeferredRegister<Item> ITEMS
-            = DeferredRegister.create(ForgeRegistries.ITEMS, TrophyModAltarPack.ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TrophyModAltarPack.ID);
+    private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TrophyModAltarPack.ID);
 
     public static final RegistryObject<Block> BRONZE_TROPHY_BLOCK = Utils.regBlockWithItem(BLOCKS, ITEMS, "bronze_trophy_block", new TrophyBlock(AbstractBlock.Properties.from(Blocks.IRON_BLOCK)), ItemGroup.BUILDING_BLOCKS);
     public static final RegistryObject<Block> SILVER_TROPHY_BLOCK = Utils.regBlockWithItem(BLOCKS, ITEMS, "silver_trophy_block", new TrophyBlock(AbstractBlock.Properties.from(Blocks.IRON_BLOCK)), ItemGroup.BUILDING_BLOCKS);
